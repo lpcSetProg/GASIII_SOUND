@@ -16,6 +16,7 @@
 #include "EnemyShip.h"
 #include "Planet.h"
 #include "Background.h"
+#include "Audio.h"
 
 
 class SectorMap1 : public GameLevel
@@ -32,6 +33,7 @@ class SectorMap1 : public GameLevel
 	EnemyShip Klingon;
 	Background SpaceSectorMapBackground;
 	Grid gameBoard;
+	Audio spaceTheme;
 
 public:
 	//Game event methods used by Game Controller and Game Level (SectorMap1)

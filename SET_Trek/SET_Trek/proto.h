@@ -29,6 +29,8 @@
 #include <iostream>
 #include <time.h>
 #include <cstddef>
+#include <xaudio2.h>
+#include <Mmsystem.h>
 
 
 

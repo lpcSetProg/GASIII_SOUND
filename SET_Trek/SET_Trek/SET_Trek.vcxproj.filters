@@ -31,6 +31,15 @@
     <Filter Include="Resource Files\Assets\Sprites\EnemyShip">
       <UniqueIdentifier>{7d1f3840-5a5a-4dfa-ac3f-938b9bf23b18}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Resource Files\Assets\Audio">
+      <UniqueIdentifier>{af6870ec-29aa-4cb0-91da-f56bb9973a63}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Assets\Audio\SFX">
+      <UniqueIdentifier>{58958dc1-22bc-44ad-8aca-5fef9eaff61b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Assets\Audio\Music">
+      <UniqueIdentifier>{b40dd681-4da2-4e9b-894d-7e31657f365d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GameController.cpp">
@@ -67,6 +76,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="EnemyShip.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Audio.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -111,6 +123,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Audio.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -162,5 +177,18 @@
     <ResourceCompile Include="SET_Trek.rc">
       <Filter>Resource Files</Filter>
     </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Theme_DarkStar.mid">
+      <Filter>Resource Files\Assets\Audio\Music</Filter>
+    </None>
+    <None Include="theOcean.mid">
+      <Filter>Resource Files\Assets\Audio\Music</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="blast.wav">
+      <Filter>Resource Files\Assets\Audio\Music</Filter>
+    </Media>
   </ItemGroup>
 </Project>

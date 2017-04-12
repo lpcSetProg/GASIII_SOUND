@@ -39,7 +39,7 @@
 */
 void SectorMap1::Load()
 {
-
+	spaceTheme.createAudio();
 	load_Background_Bitmap();
 	load_Ship_Bitmap();
 	load_EnemyShip_Bitmap();
@@ -47,6 +47,8 @@ void SectorMap1::Load()
 	gameBoard = Grid();
 	gameBoard.Randomize_Grid();
 	ApplyChromaKeyEffects();
+	
+		
 }
 
 
@@ -369,7 +371,8 @@ void SectorMap1::collisionDetection()
 	{
 		//Collision message is displayed to user
 		MessageBox(NULL, "Collision Detected!\n-300 Energy Points\n\n Avoid Damadge!","WARNING!!!", NULL);
-
+		DWORD poo = spaceTheme.VolumeValue(9000);
+		waveOutSetVolume(NULL, poo);
 		//Player energy points are subtracted 
 		Enterprise.energyLevel - 300;
 

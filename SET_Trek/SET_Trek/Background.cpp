@@ -32,6 +32,8 @@ SpriteSheet* Background::GetBackgroundBmp()
 
 }
 
+
+
 void Background::SetBackgroundBmp(SpriteSheet* backgroundBitmap)
 {
 	backgroundBmp = backgroundBitmap;
@@ -39,7 +41,7 @@ void Background::SetBackgroundBmp(SpriteSheet* backgroundBitmap)
 
 
 //=============================================================================
-// Grid Destructor
+// Background Destructor
 //=============================================================================
 Background::~Background()
 {
